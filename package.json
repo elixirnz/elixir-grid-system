@@ -8,8 +8,12 @@
     "build": "rm -rf build && ./node_modules/.bin/babel src -d build",
     "docs": "styleguidist build",
     "lint": "eslint --ignore-path .gitignore --fix *.js src/**/*.jsx src/**/*.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "pre-commit": "npm run build"
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run build"
+    }
   },
   "types": "./index.d.ts",
   "files": [
