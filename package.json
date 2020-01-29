@@ -9,7 +9,7 @@
     "docs": "styleguidist build",
     "lint": "eslint --ignore-path .gitignore --fix *.js src/**/*.jsx src/**/*.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prepare": "npm run build"
+    "pre-commit": "npm run build"
   },
   "types": "./index.d.ts",
   "files": [
@@ -65,6 +65,7 @@
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-jsx-a11y": "^6.1.1",
     "eslint-plugin-react": "^7.9.1",
+    "husky": "^4.2.1",
     "react": "^16.5.2",
     "react-dom": "^16.4.2",
     "react-styleguidist": "^10.6.1",
