@@ -5,7 +5,7 @@
   "main": "./build/index.js",
   "scripts": {
     "start": "styleguidist server",
-    "build": "rm -rf build && babel src -d build",
+    "build": "rm -rf build && ./node_modules/.bin/babel src -d build",
     "docs": "styleguidist build",
     "lint": "eslint --ignore-path .gitignore --fix *.js src/**/*.jsx src/**/*.js",
     "test": "echo \"Error: no test specified\" && exit 1",
