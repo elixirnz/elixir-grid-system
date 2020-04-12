@@ -105,4 +105,5 @@ declare module 'react-grid-system' {
     export class Hidden extends React.Component<HiddenProps, any> { }
     export class ScreenClassRender extends React.Component<ScreenClassRenderProps, any> { }
     export class Visible extends React.Component<VisibleProps, any> { }
+    export class Viewport extends React.Component<{}, any> {}
 }
