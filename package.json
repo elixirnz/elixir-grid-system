@@ -5,7 +5,7 @@
   "main": "./build/index.js",
   "scripts": {
     "start": "styleguidist server",
-    "build": "rm -rf build && ./node_modules/.bin/babel src -d build",
+    "build": "rm -rf lib && ./node_modules/.bin/babel src -d lib",
     "docs": "styleguidist build",
     "lint": "eslint --ignore-path .gitignore --fix *.js src/**/*.jsx src/**/*.js",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -43,7 +43,9 @@
   "dependencies": {
     "@babel/cli": "^7.8.3",
     "@babel/core": "^7.8.3",
+    "@babel/helper-compilation-targets": "^7.16.7",
     "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/plugin-proposal-class-static-block": "^7.16.7",
     "@babel/plugin-proposal-decorators": "^7.8.3",
     "@babel/plugin-proposal-do-expressions": "^7.8.3",
     "@babel/plugin-proposal-export-default-from": "^7.8.3",
